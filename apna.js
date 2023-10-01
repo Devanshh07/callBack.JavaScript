@@ -1,4 +1,3 @@
-
 let h1 = document.querySelector("h1");
 let div = document.querySelector("div");
  function nextcolor(){
@@ -6,11 +5,12 @@ let div = document.querySelector("div");
 }
 
 function changecolor(color,delay,nextcolor){
-    setTimeout(() => {
-       div.style.backgroundColor = color;
-       nextcolor();
-    }, delay);
-};
+    
+        setTimeout(() => {
+            div.style.backgroundColor = color;
+            nextcolor();
+         }, delay);
+    };
 
  changecolor("red" , 1000 , ()=>{
     changecolor("yellow" , 1000 , ()=>{
@@ -21,4 +21,5 @@ function changecolor(color,delay,nextcolor){
         });
     });
 });
-    
+
+ 
